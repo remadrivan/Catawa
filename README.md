@@ -1,4 +1,4 @@
-# Catslap
+# Catawa
 ![Cat Slap!](doc/img/catslap.gif)
 
 LDAP REST microservice with Password Policy overlay support
@@ -13,7 +13,7 @@ OpenLDAP comes with the awesome [Password Policy](http://www.zytrax.com/books/ld
 
 ***However!*** Such overlays are part of LDAPv3, which adds richer return data, but most common languages do not support providing this data when using the `bind` function. An LDAP bind will work the same regardless, but will lack this informative data (e.g. account locked, password reset required, etc.).
 
-*Catslap* provides this detailed LDAP authentication as a REST microservice that can be incorporated into any application's authentication process. *Catslap* also acts as middleware security to isolate your LDAP services from your other applications (your apps won't require administrative bind credentials). Also, because *Catslap* is powered by [Mojolicious](http://mojolicious.org), horizontal scaling and zero-downtime hot redeployment are effortless through the built-in [Hypnotoad](http://mojolicious.org/perldoc/Mojolicious/Guides/Cookbook#Hypnotoad) pre-forking web server.
+*Catawa* provides this detailed LDAP authentication as a REST microservice that can be incorporated into any application's authentication process. *Catslap* also acts as middleware security to isolate your LDAP services from your other applications (your apps won't require administrative bind credentials). Also, because *Catslap* is powered by [Mojolicious](http://mojolicious.org), horizontal scaling and zero-downtime hot redeployment are effortless through the built-in [Hypnotoad](http://mojolicious.org/perldoc/Mojolicious/Guides/Cookbook#Hypnotoad) pre-forking web server.
 
 ### Why Perl?
 
@@ -60,13 +60,13 @@ meow@server:/home/meow/catslap$ cpanm --installdeps .
 meow@server:/home/meow/catslap$ carton install
 ```
 
-3. Configure *Catslap*, by copying `catslap.conf.example` to `catslap.conf` and editing it, following the comments within.
+3. Configure *Catawa*, by copying `catslap.conf.example` to `catslap.conf` and editing it, following the comments within.
 
-4. Set *Catslap* to start with your server using either the supplied startup scripts, or using system utilities like Systemd or Supervisord.
+4. Set *Catawa* to start with your server using either the supplied startup scripts, or using system utilities like Systemd or Supervisord.
 
 ## Usage
 
-**Notice**: This assumes we installed *Catslap* as the `meow` user in `/home/meow/catslap`.
+**Notice**: This assumes we installed *Catawa* as the `meow` user in `/home/meow/catslap`.
 
 ```
 meow@server:/home/meow/catslap$ ./bin/catslap
