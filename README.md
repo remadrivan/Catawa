@@ -13,7 +13,7 @@ OpenLDAP comes with the awesome [Password Policy](http://www.zytrax.com/books/ld
 
 ***How!?*** Such overlays are part of LDAPv3, which adds richer return data, but most common languages do not support providing this data when using the `bind` function. An LDAP bind will work the same regardless, but will lack this informative data (e.g. account locked, password reset required, etc.).
 
-*Catawa* provides this detailed LDAP authentication as a REST microservice that can be incorporated into any application's authentication process. *Catslap* also acts as middleware security to isolate your LDAP services from your other applications (your apps won't require administrative bind credentials). Also, because *Catslap* is powered by [Mojolicious](http://mojolicious.org), horizontal scaling and zero-downtime hot redeployment are effortless through the built-in [Hypnotoad](http://mojolicious.org/perldoc/Mojolicious/Guides/Cookbook#Hypnotoad) pre-forking web server.
+*Catawa* provides this detailed LDAP authentication as a REST microservice that can be incorporated into any application's authentication process. *Catawa* also acts as middleware security to isolate your LDAP services from your other applications (your apps won't require administrative bind credentials). Also, because *Catawa* is powered by [Mojolicious](http://mojolicious.org), horizontal scaling and zero-downtime hot redeployment are effortless through the built-in [Hypnotoad](http://mojolicious.org/perldoc/Mojolicious/Guides/Cookbook#Hypnotoad) pre-forking web server.
 
 ### Why Perl?
 
@@ -21,7 +21,7 @@ The [`Net::LDAP`](https://metacpan.org/pod/Net::LDAP) Perl module includes full 
 
 ## Installation
 
-**Notice**: This assumes we will be installing and running *Catslap* as the `meow` user, installed in `/home/meow/catslap`.
+**Notice**: This assumes we will be installing and running *Catawa* as the `meow` user, installed in `/home/meow/catslap`.
 
 ### Requirements
 
