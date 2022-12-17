@@ -19,10 +19,6 @@ OpenLDAP comes with the awesome [Password Policy](http://www.zytrax.com/books/ld
 
 The [`Net::LDAP`](https://metacpan.org/pod/Net::LDAP) Perl module includes full support for the LDAPv3 Password Policy overlay (via the [`Net::LDAP::Control::PasswordPolicy`](https://metacpan.org/pod/Net::LDAP::Control::PasswordPolicy) module). Perl is seemingly the only major web language with such complete support.
 
-### Why the name?
-
-There is a utility that comes with OpenLDAP called [`slapcat`](https://linux.die.net/man/8/slapcat)`(8)`, and since bad puns are ***the*** highest form of comedy, *Catslap* was born! :D
-
 ## Installation
 
 **Notice**: This assumes we will be installing and running *Catslap* as the `meow` user, installed in `/home/meow/catslap`.
@@ -42,7 +38,7 @@ These will be installed in the next step.
 
 ### Install
 
-1. `cd` to the parent directory where *Catslap* will be installed:
+1. `cd` to the parent directory where *Catawa* will be installed:
 
 ```
 meow@server:/home/meow$ cd /home/meow/catslap
@@ -76,4 +72,3 @@ meow@server:/home/meow/catslap$
 
 -----
 
-<small>No cats were slapped in the making of this software. =^^=</small>
